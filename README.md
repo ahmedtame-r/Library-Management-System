@@ -4,6 +4,8 @@
 
 The **Library Management System (LMS)** is a desktop application built with **Python** and **Tkinter**. It is designed to help libraries manage books efficiently and facilitate interactions between users and administrators. Users can perform operations like logging in, adding books, borrowing, searching, and displaying available books. Administrators can manage the system and ensure that all library operations run smoothly.
 
+<br>
+
 ## **Table of Contents**
 
 1. [Features](#features)
@@ -11,6 +13,8 @@ The **Library Management System (LMS)** is a desktop application built with **Py
 3. [Installation Guide](#installation-guide)
 4. [Usage Instructions](#usage-instructions)
 5. [Code Structure](#code-structure)
+
+<br>
 
 ## **Features**
 
@@ -37,12 +41,16 @@ The **Library Management System (LMS)** is a desktop application built with **Py
   - A clean, user-friendly interface developed with **Tkinter**.
   - Responsive design with interactive elements.
 
+<br>
+
 ## **Technologies Used**
 
 - **Programming Language**: Python
 - **GUI Framework**: Tkinter
 - **Data Storage**: Local dictionary-based storage (to be extended to a database in future versions)
 - **Platform**: Cross-platform (Windows, Linux, macOS)
+
+<br>
 
 ## **Installation Guide**
 
@@ -64,7 +72,8 @@ The **Library Management System (LMS)** is a desktop application built with **Py
    python main.py
 4. **The application will launch a login window where users can sign up or log in to the system**
 
----
+<br>
+
 ## **Usage Instructions**
 
 ### User Login:
@@ -82,7 +91,7 @@ The **Library Management System (LMS)** is a desktop application built with **Py
 ### Book Search:
 - Users can search for books by title, author, or keyword.
 
----
+<br>
 
 ## **Code Structure**
 
