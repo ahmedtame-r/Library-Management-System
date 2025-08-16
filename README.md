@@ -1,50 +1,104 @@
-# Library-Management-System
-A Library Management System built with Python Tkinter. Features include user login, book addition, borrowing, searching, and displaying books. It supports a simple sign-up and login process, designed for both users and library admins.
+# **Library Management System**
 
-# Library Management System
+## **Overview**
 
-A simple and intuitive **Library Management System** built with Python and Tkinter. This system allows library users to manage books efficiently, including functionalities such as login, book addition, borrowing, searching, and displaying available books.
+The **Library Management System (LMS)** is a desktop application built with **Python** and **Tkinter**. It is designed to help libraries manage books efficiently and facilitate interactions between users and administrators. Users can perform operations like logging in, adding books, borrowing, searching, and displaying available books. Administrators can manage the system and ensure that all library operations run smoothly.
 
-## Features
+## **Table of Contents**
 
-- **User Authentication**: Sign up and login system for users and administrators.
-- **Book Management**: Add new books, search for books by title or author, and view available books.
-- **Borrowing System**: Borrow books and keep track of the remaining copies.
-- **User-Friendly Interface**: Easy-to-use GUI built with Tkinter for seamless navigation.
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation Guide](#installation-guide)
+4. [Usage Instructions](#usage-instructions)
+5. [Code Structure](#code-structure)
 
-## Requirements
+## **Features**
 
-- Python 3.x
-- Tkinter (comes pre-installed with Python)
+- **User Authentication**: 
+  - Sign up and login functionality for both users and administrators.
+  - Secure password storage and validation.
+  
+- **Book Management**:
+  - Add new books to the library system.
+  - Update or remove book details.
+  
+- **Borrowing System**:
+  - Borrow books, with a real-time update on the number of available copies.
+  - Track borrowed books.
 
-## Installation
+- **Search Functionality**:
+  - Search for books based on title, author, or other keywords.
 
-1. Clone the repository:
+- **Admin Control**:
+  - Admins have special privileges to manage books and user accounts.
+  - View all books and check availability.
+
+- **User Interface**:
+  - A clean, user-friendly interface developed with **Tkinter**.
+  - Responsive design with interactive elements.
+
+## **Technologies Used**
+
+- **Programming Language**: Python
+- **GUI Framework**: Tkinter
+- **Data Storage**: Local dictionary-based storage (to be extended to a database in future versions)
+- **Platform**: Cross-platform (Windows, Linux, macOS)
+
+## **Installation Guide**
+
+### Prerequisites
+
+- Ensure Python 3.x is installed on your system.
+- Tkinter comes pre-installed with Python, so no additional installation is needed for it.
+
+### Steps to Install
+
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/library-management-system.git
-
-2. Navigate to the project directory:
+2. **Navigate to Project Directory**:
    ```bash
-   cd GUI_W_OOP.py
-
-3. Run the application:
+   cd library-management-system
+3. **Run the Application**:
    ```bash
    python main.py
+4. **The application will launch a login window where users can sign up or log in to the system**
 
-## Usage
+---
+## **Usage Instructions**
 
-- Login: Enter your username and password to log in.
+### User Login:
+- Upon opening the application, users will be presented with a login screen.
+- Users can either log in with their credentials or sign up for a new account.
 
-- Sign Up: Create a new account if you don't have one.
+### Admin Panel:
+- Once logged in, users with admin privileges can access the full library management functionality.
+- Admins can add new books, update existing ones, and manage book availability.
 
-- Book Management: Once logged in, you can add, borrow, search, and display books.
+### Borrowing Books:
+- Users can search for books and borrow them if available.
+- Once borrowed, the number of copies is updated automatically.
 
+### Book Search:
+- Users can search for books by title, author, or keyword.
 
-## Screenshots
+---
 
+## **Code Structure**
 
-## Contributing
+The project follows a modular structure to separate concerns and maintain readability. The core components of the project are:
 
-Feel free to fork this project, open issues, or submit pull requests. Contributions are welcome!
+### 1. **LoginPage** (class `LoginPage`):
+- Handles user authentication (login and sign-up functionality).
 
+### 2. **Library** (class `Library`):
+- Manages the collection of books and handles operations like adding, borrowing, and searching.
 
+### 3. **LibraryGUI** (class `LibraryGUI`):
+- Implements the graphical interface for managing books, borrowing books, and displaying book information.
+
+### 4. **Book** (class `Book`):
+- Represents individual books with properties like ID, title, author, and number of copies.
+
+### 5. **Admin Management**:
+- Admins can manage the system from the Library GUI, adding and updating books as needed.
